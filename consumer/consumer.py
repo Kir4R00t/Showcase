@@ -1,5 +1,5 @@
-from kafka.errors import NoBrokersAvailable
-from kafka import KafkaConsumer
+from kafka.errors import NoBrokersAvailable # type: ignore
+from kafka import KafkaConsumer             # type: ignore
 import logging
 import json
 import time

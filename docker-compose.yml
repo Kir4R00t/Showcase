@@ -23,9 +23,10 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+    
     restart: on-failure
     command: >
-      bash -c "sleep 5 && /etc/confluent/docker/run"
+      bash -c "sleep 5 && /etc/confluent/docker/run" 
 
 
   producer-api:
