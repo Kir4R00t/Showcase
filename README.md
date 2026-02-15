@@ -48,7 +48,7 @@ Client
 
 Health check
 ```
-curl http://localhost:500/health
+curl http://localhost:5000/health
 ```
 
 Post a new event into the "DB"
@@ -61,4 +61,10 @@ curl -X POST http://localhost:5000/events \
 Read all events
 ```
 curl http://localhost:5000/events | jq
+```
+
+### Robot framework tests
+Running tests
+```
+robot -d results tests/api_tests.robot
 ```
