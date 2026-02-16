@@ -44,6 +44,28 @@ Flask REST API (GET /events)
 Client
 ```
 
+### Running the app
+
+`git clone https://github.com/Kir4R00t/Showcase
+`
+
+`cd Showcase/
+`
+
+`python3 -m venv .venv
+`
+
+`source .venv/bin/activate
+`
+
+`sudo docker compose up --build -d
+`
+
+### Running Robot framework tests
+```
+robot -d results tests/api_tests.robot
+```
+
 ### Working with the API
 
 Health check
@@ -61,10 +83,4 @@ curl -X POST http://localhost:5000/events \
 Read all events
 ```
 curl http://localhost:5000/events | jq
-```
-
-### Robot framework tests
-Running tests
-```
-robot -d results tests/api_tests.robot
 ```
